@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/activity_margin"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@drawable/background_round_white"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="*">
+
+                <TableRow android:id="@+id/tabRow1">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/school_name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/school_region"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tabRow2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/schoolName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/schoolRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tabRow3"
+                    android:layout_marginTop="15dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/school_status"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/school_country"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow android:id="@+id/tabRow4">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/schoolStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/schoolCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
+
